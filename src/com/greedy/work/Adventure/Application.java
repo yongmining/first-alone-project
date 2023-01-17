@@ -23,7 +23,7 @@ public class Application {
 		System.out.print("닉네임 : ");
 		String Name = sc.nextLine();
 		Information ifm = new Information();
-		
+		Gate gt = new Gate();
 		
 		while(true) {
 			System.out.println("------- 어떤 것을 하시겠습니까? --------");
@@ -39,7 +39,7 @@ public class Application {
 				ifm.getInformation(Name);
 				break;
 			case 2 : 
-				
+				gt.gate();
 				break;
 			case 3 : 
 				break;
