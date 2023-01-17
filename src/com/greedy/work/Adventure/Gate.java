@@ -8,6 +8,8 @@ public class Gate {
 		
 		System.out.println("던전 게이트에 오신 것을 환영합니다. 어떤 몬스터를 사냥하시겠습니까?");
 		Scanner sc = new Scanner(System.in);
+		LeeDongeon ldg = new LeeDongeon();
+		choiDongeon cdg = new choiDongeon();
 		
 		
 		while(true) {
@@ -20,13 +22,13 @@ public class Gate {
 			
 		switch (no) {
 			case 1 : 
-				
+				ldg.Leedongeon();
 				break;
 			case 2 : 
-				
+				cdg.choidongeon();
 				break;
 			case 9 : 
-				System.out.println("메뉴로 돌아가기");
+				System.out.println("메뉴로 돌아갑니다.");
 				return;
 			default :
 				System.out.println("잘못된 번호를 입력하셨습니다. 다시 눌러주세요.");
