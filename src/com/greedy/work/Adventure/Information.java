@@ -3,7 +3,7 @@ package com.greedy.work.Adventure;
 public class Information {
 	String Name;
 	int Level = 1;
-	int WeaPon = 1;
+	int WeaPon = 15;
 	int Armor = 1;
 	int Hp = 10;
 	int Exp = 0;
@@ -11,15 +11,9 @@ public class Information {
 	
 	public Information(){}
 
-	public Information(String name, int level, int weaPon, int armor, int hp, int exp, int gold ) {
+	public Information(String name ) {
 		super();
 		Name = name;
-		Level = level;
-		WeaPon = weaPon;
-		Armor = armor;
-		Hp = hp;
-		Exp = exp;
-		Gold = gold;
 	}
 
 	public String getName() {
@@ -81,7 +75,8 @@ public class Information {
 		Gold = gold;
 	}
 	
-	public void getInformation(String Name) {
+	
+	public void getInformation() {
 		System.out.println("닉네임 : " + Name);
 		System.out.println("레벨  : " + Level);
 		System.out.println("무기  : " + WeaPon);

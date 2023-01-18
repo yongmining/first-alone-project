@@ -2,15 +2,15 @@ package com.greedy.work.Adventure;
 
 import java.util.Scanner;
 
-public class LeeDongeon {
-	public void Leedongeon() {
+public class Dongeon {
+	public void dongeon(Monster monster,Information ifm) {
 		
-		int Hp = 50;
-		int At = 1;
-		System.out.println("이준성 던전에 들어오셨습니다. 싸우세요!");
+		
+		System.out.println(monster.getName() + "던전에 들어오셨습니다. 싸우세요!");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Hp : " + Hp);
-		System.out.println("At : " + At );
+		System.out.println("Hp : " + monster.getHp());
+		System.out.println("At : " + monster.getAt());
+		
 
 
 		while(true) {
@@ -23,7 +23,7 @@ public class LeeDongeon {
 
 			switch (no) {
 			case 1 : 
-
+				monster.hp(ifm);
 				break;
 			case 2 : 
 

@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class Gate {
 
-	public void gate() {
+	public void gate(Information ifm) {
 		
 		System.out.println("던전 게이트에 오신 것을 환영합니다. 어떤 몬스터를 사냥하시겠습니까?");
 		Scanner sc = new Scanner(System.in);
-		LeeDongeon ldg = new LeeDongeon();
-		choiDongeon cdg = new choiDongeon();
+		Dongeon dg = new Dongeon();
 		
 		
 		while(true) {
@@ -22,10 +21,10 @@ public class Gate {
 			
 		switch (no) {
 			case 1 : 
-				ldg.Leedongeon();
+				dg.dongeon(new Monster("이준성",10,100,30,1),ifm);
 				break;
 			case 2 : 
-				cdg.choidongeon();
+				dg.dongeon(new Monster("명건초이",100,1000,500,10),ifm);
 				break;
 			case 9 : 
 				System.out.println("메뉴로 돌아갑니다.");

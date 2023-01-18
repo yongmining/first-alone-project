@@ -1,18 +1,27 @@
 package com.greedy.work.Adventure;
 
 public class MonsterDTO {
-	String Name;
-	int Hp;
-	int At;
+	
+	private String Name;
+	private int exp;
+	private int gld;
+	private int Hp;
+	private int At;
 
 	public MonsterDTO() {}
 
-	public MonsterDTO(String name, int hp, int at) {
+	
+
+	public MonsterDTO(String name, int exp, int gld, int hp, int at) {
 		super();
 		Name = name;
+		this.exp = exp;
+		this.gld = gld;
 		Hp = hp;
 		At = at;
 	}
+
+
 
 	public String getName() {
 		return Name;
@@ -24,6 +33,22 @@ public class MonsterDTO {
 
 	public int getAt() {
 		return At;
+	}
+
+	public int getExp() {
+		return exp;
+	}
+
+	public int getGld() {
+		return gld;
+	}
+
+	public void setExp(int exp) {
+		this.exp = exp;
+	}
+
+	public void setGld(int gld) {
+		this.gld = gld;
 	}
 
 	public void setName(String name) {
