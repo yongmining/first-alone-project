@@ -24,9 +24,14 @@ public class Dongeon {
 			switch (no) {
 			case 1 : 
 				monster.hp(ifm);
+				if(ifm.getHp() <= 0) {
+					ifm.Hp = 10;
+				System.out.println("던전에서 쫓겨납니다.");
+				return;
+				}
 				break;
 			case 2 : 
-
+				monster.recovery(ifm);
 				break;
 			case 9 : 
 				System.out.println("도망칩니다.");
