@@ -24,6 +24,7 @@ public class Application {
 		String Name = sc.nextLine();
 		Information ifm = new Information(Name);
 		Gate gt = new Gate();
+		hamering hm = new hamering();
 		
 		while(true) {
 			System.out.println("------- 어떤 것을 하시겠습니까? --------");
@@ -42,6 +43,7 @@ public class Application {
 				gt.gate(ifm);
 				break;
 			case 3 : 
+				hm.hamer(ifm);
 				break;
 			case 9 : 
 				System.out.println("프로그램을 종료합니다.");
