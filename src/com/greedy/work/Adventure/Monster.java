@@ -5,8 +5,8 @@ public class Monster extends MonsterDTO {
 //	Information ifm = new Information();
 	private int hpp = 0;
 	private int temphp = getHp();
-	public int eexp = 0;
-	public int ggld = 0;
+	private int eexp = 0;
+	private int ggld = 0;
 	private int maxexp = 100;
 	
 	public Monster(String name, int exp, int gld, int hp, int at) {

@@ -9,7 +9,7 @@ public class Gate {
 		System.out.println("던전 게이트에 오신 것을 환영합니다. 어떤 몬스터를 사냥하시겠습니까?");
 		Scanner sc = new Scanner(System.in);
 		Dongeon dg = new Dongeon();
-		
+			
 		
 		while(true) {
 			System.out.println("------- Monster --------");

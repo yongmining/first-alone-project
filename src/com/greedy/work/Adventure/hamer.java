@@ -8,7 +8,7 @@ public class hamer {
 
 	public void weapon(Information ifm) {
 		if(ifm.getGold() < gd) {
-			System.out.println("강화못해.");
+			System.out.println("강화할 골드가 부족합니다.");
 			return;
 		}
 		int Random = (int)(Math.random() * 100);
